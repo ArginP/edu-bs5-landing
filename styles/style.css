@@ -1,3 +1,69 @@
+:root {
+  --primary: #05b1b1;
+  --secondary: #52339a;
+}
 
+header {
+  padding: 14rem 0;
+}
+
+section,
+footer {
+  padding: 7rem 0;
+}
+
+header,
+footer {
+  background: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), var(--primary);
+  background: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), -moz-linear-gradient(left, var(--primary) 0%, var(--secondary) 100%);
+  background: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), -webkit-gradient(linear, left top, right top, color-stop(0%, #000000), color-stop(100%, var(--secondary)));
+  background: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), -webkit-linear-gradient(left, var(--primary) 0%, var(--secondary) 100%);
+  background: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), -o-linear-gradient(left, var(--primary) 0%, #var --secondary 100%);
+  background: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), -ms-linear-gradient(left, var(--primary) 0%, var(--secondary) 100%);
+  background: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+  filter: url(https://ik.imagekit.io/arginp/pattern.png?updatedAt=1742549840859), progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--primary)", endColorstr="var(--secondary)", GradientType=1);
+  background-size: contain;
+}
+
+h1 {
+  text-shadow: 0.01rem 0.01rem 0.6rem var(--secondary);
+}
+
+.edu-play {
+  background-color: var(--primary);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 2.5rem auto;
+  transition: all 0.2s ease;
+}
+.edu-play:hover {
+  background-color: var(--secondary);
+}
+.edu-play .edu-triangle {
+  margin-right: -0.5rem;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 1rem 0 1rem 2rem;
+  border-color: transparent transparent transparent var(--bs-white);
+}
+
+.btn-edu {
+  display: block;
+  max-width: 14rem;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  color: var(--bs-white);
+  background-color: var(--secondary);
+}
+.btn-edu:hover {
+  color: var(--bs-white);
+  background-color: var(--primary);
+}
 
 /*# sourceMappingURL=style.css.map */
